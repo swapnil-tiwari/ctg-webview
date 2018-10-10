@@ -54,6 +54,10 @@
 {
   overflow: hidden;
 }
+.removemember
+{
+  float: right;
+}
 @media only screen and (max-width: 768px){
 
   .teamcards
@@ -64,5 +68,11 @@
   {
     overflow-y: unset;
     text-align: center;
+  }
+  .removemember
+  {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
