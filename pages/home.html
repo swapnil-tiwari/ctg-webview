@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="theme-color" content="#443627">
+    <meta name="theme-color" content="#fff">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -21,14 +21,14 @@
     <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon.png">
 		<script type="text/javascript" src="../js/backend.js"></script>
 		<script type="text/javascript" src="../js/api.rpc.js"></script>
-		<!-- <script>
+		<script>
 		async function apihandler(api)
 		{
 				if((await api.islogin()).data.login==false)
-					window.location.href = "./login.html";
+					window.location.href = "/";
 		}
 		setAPI(apihandler);
-		</script> -->
+		</script>
 
     <style type="text/css">
       .defaultcont
@@ -74,7 +74,7 @@
 						<a href="#orders"><li>Orders</li></a>
 						<a href="#teamarea"><li>Team Area</li></a>
 						<a href="#support"><li>Support</li></a>
-						<li>Logout</li>
+						<a href="#" onclick="logout();"><li>Logout</li></a>
 					</ul>
 				</div>
 
@@ -218,7 +218,7 @@
 								 <span class="teamfields">Email:</span><span>Member Email</span><br><br>
 								 <span class="teamfields">Contact Number:</span><span>Number</span><br><br>
 							 </p>
-							 <input type="submit" name="Submit" value="Remove" class="submit-btn removemember" onclick="">
+							 <input type="submit" name="Submit" value="Remove" class="submit-btn removemember" onclick="this.parentElement.parentElement.parentElement.remove()">
 						 </div>
 					 </div>
 				 </div>`
@@ -226,6 +226,8 @@
 			   {
 			     teamcardsparent.innerHTML+=cards;
 			   }
+					
+
 			 </script>
 
   </html>

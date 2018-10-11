@@ -30,7 +30,6 @@
 </head>
 
 <body>
-
 	<div class="row reg">
 
 		<div class="col-sm-3 leftpanel">
@@ -49,6 +48,9 @@
 
 
 		<div class="col-sm-9" style="background-color: #80808012">
+			<div class="capheader">
+				<h3>Finalizing Registration</h3>
+			</div>
 			<div class="content">
 				<label>Startup Name</label><br>
 				<input type="input" name="name" placeholder="Name" class="name" id="startupname">
@@ -322,10 +324,17 @@
 				<br><br>
 				<label>Current Status</label><br>
 				<h5>What is the current status  of your startup?</h5>
-				<textarea class="description" placeholder="Write here..." id="currentstatus"></textarea>
+					<select data-placeholder="Status" class="languages" id="currentstatus">
+						<option value="registered">Registered</option>
+						<option value="unregistered">Unregistered</option>
+						<option value="underdevelopment">Underdevelopment</option>
+
+					</select>
 
 			</div>
 				<!-- End of div content  -->
+				<div class="cntrlbtn"><center><input type="submit" name="Submit" value="Finish" class="submit-btn" onclick="updateData_f();" style="margin-right:40px;"><input type="submit" name="Submit" value="Logout" class="submit-btn" onclick="logout();"></center><br></div>
+
 		</div>
 
 	</div>

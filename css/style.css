@@ -5,6 +5,11 @@ html,body
 	font-family: calibri;
 	/* overflow-y: hidden; */
 }
+
+body > *
+{
+	opacity:0.98;
+}
 .bg
 {
 	height: 100%;
@@ -495,7 +500,7 @@ html,body
 .box-container
 {
 	background-color: #2D3047;
-	height: 100%;
+	min-height: 100% !important;
 	text-align: center;
 	padding:50px;
 	padding-top: 80px;
@@ -586,7 +591,7 @@ html,body
 .box-container-3
 {
 	background-color: #2D3047;
-	height: 100%;
+	min-height: 100% !important;
 	color: white;
 	padding: 50px;
 	text-align: center;
@@ -1233,6 +1238,10 @@ select
 			margin-left: 20px !important;
 			margin-right: 20px !important;
 			overflow: unset !important;
+	}
+	.maincont .col-sm-7
+	{
+		background: #ffffffd6;
 	}
 
 }

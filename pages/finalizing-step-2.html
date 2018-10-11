@@ -28,24 +28,29 @@
 			</script>
 </head>
 <body>
-
 	<div class="row reg">
 
 		<div class="col-sm-3 leftpanel">
-			<div class="header">
-				<center><h3>Finalizing Registration</h3></center>
-				<center><h3 id="startup_cap_dash_1">Username</h3></center>
-			</div>
+			<div class="leftpanelcont">
+					<div class="header">
+						<center><h3>Finalizing Registration</h3></center>
+						<center><h3 id="startup_cap_dash_1">Username</h3></center>
+					</div>
 
-			<ul>
-			   <li>Complete Registration</li>
-				<li>Setup Profile</li>
-			</ul>
-			<center><button class="btn-sml-2" type="button" name="Finish" onclick="updateData_f();">Finish</button>
-				&nbsp;&nbsp; <button class="btn-sml-2" type="button" name="Logout" onclick="logout();">Logout</button></center>
+					<ul>
+						 <li>Complete Registration</li>
+						<li>Setup Profile</li>
+					</ul>
+					<center><button class="btn-sml-2" type="button" name="Finish" onclick="updateData_f();">Finish</button>
+						&nbsp;&nbsp; <button class="btn-sml-2" type="button" name="Logout" onclick="logout();">Logout</button></center>
+
+			</div>
 		</div>
 
 		<div class="col-sm-9" style="background-color: #80808012">
+			<div class="capheader">
+				<h3>Finalizing Registration</h3>
+			</div>
 			<div class="content">
 				<label>FULL NAME</label><br>
 				<input type="input" name="firstname" placeholder="Full Name" class="name" id="fname">
@@ -158,16 +163,20 @@
 
 				<br><br>
 				<label>DESCRIPTION</label><br>
-				<h5>A short desrcition about your skills and work.</h5>
+				<h5>A short description about your skills and work.</h5>
 				<textarea class="description" placeholder="Write here..." id="description"></textarea>
 
 				<br><br>
 				<label>WORK</label><br>
-				<h5>Provide us the link of your github profile (recommended) or any other work.</h5>
-				<textarea class="description" placeholder="Write here..." id="work"></textarea>
+				<h5>Provide us links of your work Github(recommended)</h5>
+				<input type="input" name="" placeholder="Github" class="name" id="github"><br><br>
+				<input type="input" name="" placeholder="LinkedIn" class="name" id="linkedin"><br><br>
+				<textarea class="description" placeholder="Others" id="work"></textarea>
 
 			</div>
 				<!-- End of div content  -->
+				<div class="cntrlbtn"><center><input type="submit" name="Submit" value="Finish" class="submit-btn" onclick="updateData_f();" style="margin-right:40px;"><input type="submit" name="Submit" value="Logout" class="submit-btn" onclick="logout();"></center><br></div>
+
 		</div>
 
 	</div>

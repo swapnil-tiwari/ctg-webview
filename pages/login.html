@@ -18,12 +18,12 @@
     <link rel="stylesheet" type="text/css" href="../css/animate.css">
 		<script type="text/javascript" src="../js/backend.js"></script>
 		<script type="text/javascript" src="../js/api.rpc.js"></script>
-		<script>
-		async function apihandler(api)
-		{
-				if((await api.islogin()).data.login==true)
-					window.location.href = "./homenew.html";
-		}
+	  <script>
+		  async function apihandler(api)
+		 {
+		 		if((await api.islogin()).data.login==true)
+					window.location.href = "/";
+		 }
 		setAPI(apihandler);
 		</script>
 </head>

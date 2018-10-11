@@ -22,7 +22,7 @@
 		async function apihandler(api)
 		{
 				if((await api.islogin()).data.login==true)
-					window.location.href = "./homenew.html";
+					window.location.href = "/";
 		}
 		setAPI(apihandler);
 		</script>
@@ -45,6 +45,10 @@
 							<button data-target="#myCarousel" data-slide-to="2" class="btn-lg">
 								Startup
 							</button>
+							<br>
+							<button data-target="#myCarousel" data-slide-to="3" class="btn-lg">
+								Individual
+							</button>
 					</div>
 
 					<div class="item animated slideInRight" >
@@ -56,7 +60,7 @@
 							<br>
 							<input type="password" name="pass" class="txt-sml-2" placeholder="Password" required id="pass_f">
 							<br>
-							<input type="text" name="contact_no" class="txt-sml-2" placeholder="Contact Number" required id="contactno_f">
+							<input type="text" name="contact_no" class="txt-sml-2" placeholder="Contact Number" required id="contactno_f" onkeypress="event.key=='Enter'&& register_f();">
 							<br>
 							<p style="padding-right: 50px; padding-left: 50px;">
 								<input type="checkbox" name="terms" required> I aaccept the <a href="terms_and_conditions.pdf" style="color:#1E90FF">Terms and Conditions</a> Of the Connect To Grow.
@@ -70,7 +74,7 @@
 						 Already registered? <a href="login.html">Login</a>
 					</div>
 
-					<div class="item">
+					<div class="item animated slideInRight">
 						<h1 id="typestartup">Signup As A Startups</h1>
 						<form method="POST" action="">
 							<input type="text" name="name" class="txt-sml-2" placeholder="Startup Name" required id="username_sp">
@@ -79,15 +83,38 @@
 							<br>
 							<input type="password" name="password" class="txt-sml-2" placeholder="Password" required  id="pass_sp">
 							<br>
-							<input type="text" name="contact_no" class="txt-sml-2" placeholder="Contact Number" required id="contactno_sp">
+							<input type="text" name="contact_no" class="txt-sml-2" placeholder="Contact Number" required id="contactno_sp" onkeypress="event.key=='Enter'&& register_sp();">
 							<br>
 							<p style="padding-right: 50px; padding-left: 50px;">
-								<input type="checkbox" name="terms" required> I aaccept the <a href="terms_and_conditions.pdf" style="color:#1E90FF">Terms and Conditions</a> Of the Connect To Grow.
+								<input type="checkbox" name="terms" required> I accept the <a href="terms_and_conditions.pdf" style="color:#1E90FF">Terms and Conditions</a> Of the Connect To Grow.
 								And all my details filled up are correct.
 							</p>
 							<button type="button" class="btn-sml-2" onclick='register_sp()'>
                             	SignUp
                         	</button>
+						</form>
+						<div class="hidden" id="message">Success Message</div>
+
+						 Already registered? <a href="login.html">Login</a>
+					</div>
+					<div class="item animated slideInRight">
+						<h1 id="typestartup">Signup As an Individual</h1>
+						<form method="POST" action="">
+							<input type="text" name="name" class="txt-sml-2" placeholder="Name" required id="username_ind">
+							<br>
+							<input type="text" name="email" class="txt-sml-2" placeholder="Email" required id="email_ind">
+							<br>
+							<input type="password" name="password" class="txt-sml-2" placeholder="Password" required  id="pass_ind">
+							<br>
+							<input type="text" name="contact_no" class="txt-sml-2" placeholder="Contact Number" required id="contactno_ind" onkeypress="event.key=='Enter'&& register_ind();">
+							<br>
+							<p style="padding-right: 50px; padding-left: 50px;">
+								<input type="checkbox" name="terms" required> I accept the <a href="terms_and_conditions.pdf" style="color:#1E90FF">Terms and Conditions</a> Of the Connect To Grow.
+								And all my details filled up are correct.
+							</p>
+							<button type="button" class="btn-sml-2" onclick='register_ind()'>
+															SignUp
+													</button>
 						</form>
 						<div class="hidden" id="message">Success Message</div>
 
