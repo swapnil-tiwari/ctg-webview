@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../css/loader.css">
     <link rel="stylesheet" type="text/css" href="../css/orders.css">
 		<link rel="stylesheet" type="text/css" href="../css/teamarea.css">
+		<link rel="stylesheet" type="text/css" href="../css/support.css">
     <link rel="stylesheet" type="text/css" href="../css/profile.css">
     <link rel="stylesheet" type="text/css" href="../css/animate.css">
     <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon.png">
@@ -93,7 +94,7 @@
 					<a href="#profile"><li>Profile & Timeline</li></a>
 					<a href="#orders"><li>Orders</li></a>
 					<a href="#teamarea"><li>Team Area</li></a>
-					<li>Support</li>
+					<a href="#support"><li>Support</li></a>
 				</ul>
 			</div>
 		</div>
@@ -226,7 +227,20 @@
 			   {
 			     teamcardsparent.innerHTML+=cards;
 			   }
-					
+				 function submitQuery()
+				 {
+					 if(supname.value==""||supemail.value==""||supcno.value==""||supquery.value=="")
+					 {
+						window.alert('Please, fill the form correctly');
+					 }
+					 else {
+						 document.getElementById("queryform").reset();
+						 window.alert('Your query has been submitted, we will contact you soon');
+
+					 }
+
+				 }
+
 
 			 </script>
 

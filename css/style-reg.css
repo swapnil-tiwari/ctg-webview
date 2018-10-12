@@ -73,7 +73,7 @@ body > *
 
 }
 .name{
-	border: 1px solid #ccc;
+	  border: 1px solid #ccc;
     padding: 5px;
     text-indent: 8;
     width: 49%;
