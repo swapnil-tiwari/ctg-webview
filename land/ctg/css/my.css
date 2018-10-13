@@ -30,22 +30,22 @@ body{
   margin-top: 0px;
   z-index: 1;
 }
-.animate-bottom {
+.animate-right {
   position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
+  -webkit-animation-name: animateright;
+  -webkit-animation-duration: 0.75s;
+  animation-name: animateright;
+  animation-duration: 0.75s
 }
 
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
+@-webkit-keyframes animateright {
+  from { right: -100%; opacity:0 } 
+  to { right: 0; opacity:1 }
 }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
+@keyframes animateright { 
+  from{ right:-100%; opacity:0 } 
+  to{ right: 0; opacity:1 }
 }
 
 .bg-trans{
@@ -180,6 +180,8 @@ span.new {
 .para1{
   color: #fff;
   padding: 10px;
+  font-family: 'Federo', sans-serif;
+
 }
 .ficons{
   font-size: 80px !important;
@@ -230,6 +232,8 @@ span.new {
 }
 .text-color{
   color: #28a745;
+  font-family: 'Federo', sans-serif;
+  margin-top: 10px;
 }
 .bg-color{
   background-color: #000;
@@ -249,6 +253,15 @@ span.new {
 }
 .copyright{
   background-color: #111;
+}
+
+.navbutton{
+  border: none !important;
+}
+.navbutton:hover, .navbutton:active, .navbutton:focus{
+  background: transparent !important;
+  outline: 0 !important;
+
 }
 @media only screen and (max-width: 480px){
 
