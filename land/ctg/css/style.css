@@ -1,9 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 body {
-  background-image: url('../images/bg.png');
+  
   background-repeat: no-repeat;
   overflow-x: hidden;
+  background-image: url('../images/bg.png');
+  
 }
+ 
+
 
 #l h1 {
   position: absolute;
@@ -250,5 +254,14 @@ body {
   100% {
     left: -100%;
     opacity: 0;
+  }
+}
+
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1692px, 0, 0);
   }
 }
