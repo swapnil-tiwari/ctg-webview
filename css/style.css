@@ -900,6 +900,11 @@ margin-right: 5px;
 .nav_custom{
 	background-color: #2D3047 !important;
 }
+.navbar-brand
+{
+		font-family: 'Quicksand', sans-serif;
+    letter-spacing: 3px;
+}
 .maincont
 {
 	height: calc(100% - 51px);
