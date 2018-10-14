@@ -193,7 +193,7 @@
    					var filtersecmob='<div class="filtersecmobparent" style="float:right;margin-bottom:10px;"><span><strong>Sort By:</strong></span><select class="filtercategory"><option value="relevance">Relevance</option><option value="popularity">Popularity</option><option value="price-lowtohigh">Price -- Low to High</option><option value="price-hightolow">Price -- High to Low</option><option value="newest">Newest</option></select></div>'
    					var filtersec='<hr><ul class="filters"><strong>Sort By:</strong><li class="filteritem">Relevance</li><li class="filteritem">Popularity</li><li class="filteritem">Price -- Low to High</li><li class="filteritem">Price -- High to Low </li><li class="filteritem">Newest First</li></ul><hr style="border-color:#bfb9b9">'
              document.getElementById("dev-target").style.display="block";
-             document.getElementById("dev-target").innerHTML='<div class="postsheader"><h2 style="display:inline">'+ html +'</h2><button class="btn btn-primary goback" type="button" onclick="back(this)" id="return">Back</button>&nbsp;</div>'+filtersec+filtersecmob+'<div class="postsparent" style="overflow-y:scroll;height: calc(100% - 150px) !important;"> '+posts+posts+'</div><div id="contain"></div>';
+             document.getElementById("dev-target").innerHTML='<div class="postsheader"><h2 style="display:inline">'+ html +'</h2><button class="goback" type="button" onclick="back(this)" id="return">Back</button>&nbsp;</div>'+filtersec+filtersecmob+'<div class="postsparent" style="overflow-y:scroll;height: calc(100% - 150px) !important;"> '+posts+posts+'</div><div id="contain"></div>';
    					$(".filteritem").click(function(){
    						$(this).toggleClass("filteractive");
    					});
