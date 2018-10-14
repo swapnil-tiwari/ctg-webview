@@ -250,6 +250,14 @@ span.new {
 .copyright{
   background-color: #111;
 }
+.hamburger
+{
+  border:none !important;
+}
+.hamburger:hover{
+  background:transparent;
+
+}
 @media only screen and (max-width: 480px){
 
   #ctg1 h2{
